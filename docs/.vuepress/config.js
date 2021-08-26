@@ -15,7 +15,7 @@ module.exports = {
             '@vuepress/last-updated',
             {
                 transformer: (timestamp) => {
-                    return moment(timestamp).format('YYYY-MM-DD hh:mm:ss');
+                    return moment(timestamp).format('YYYY-MM-DD HH:mm:ss');
                 }
             }
         ]
