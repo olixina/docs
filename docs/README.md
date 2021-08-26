@@ -15,5 +15,3 @@ features:
 ---
 
 hello
-演示
-
