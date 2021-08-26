@@ -29,4 +29,6 @@ jobs:
           github_token: ${{ secrets.PAGES_TOKEN }}
           publish_dir: docs/.vuepress/dist
           commit_message: ${{ github.event.head_commit.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
