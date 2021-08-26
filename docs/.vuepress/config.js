@@ -6,18 +6,28 @@ module.exports = {
     title: '阅读文档',
     description: 'YueDu VuePress docs',
     head: [
-        ['meta', { name: 'author', content: 'olixina' }],
-        ['meta', { name: 'keywords', content: 'vuepress' }],
-        ['link', { rel: 'icon', href: '/favicon.ico' }],
+        ['link', {rel: 'icon', href: '/favicon.ico'}],
+        ['meta', {name: 'author', content: 'olixina'}],
+        ['meta', {name: 'keywords', content: 'vuepress'}],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['link', { rel: 'apple-touch-icon', href: '/icons/icon-152x152.png' }]
     ],
     plugins: [
         [
-            '@vuepress/last-updated',
-            {
+            '@vuepress/last-updated', {
                 transformer: (timestamp) => {
                     return moment(timestamp).format('YYYY-MM-DD HH:mm:ss');
                 }
             }
+        ],
+        [
+            '@vuepress/pwa', {
+            serviceWorker: true,
+            updatePopup: {
+                message: "发现新内容可用",
+                buttonText: "刷新"
+            }}
         ]
     ],
     themeConfig: {
@@ -51,7 +61,7 @@ module.exports = {
                 'c-bbb',
                 'c-ccc'
             ],
-            '/yuedu/':[
+            '/yuedu/': [
                 {
                     title: '指南',
                     collapsable: false,
@@ -91,5 +101,8 @@ module.exports = {
             ],
         },
         sidebarDepth: 2
+    },
+    markdown: {
+        lineNumbers: true
     }
 }
