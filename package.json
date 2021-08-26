@@ -12,6 +12,7 @@
   "homepage": "https://github.com/olixina/docs#readme",
   "dependencies": {},
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
     "moment": "^2.29.1",
     "vuepress": "^1.8.2",
