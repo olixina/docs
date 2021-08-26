@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git+ssh://git@github.com/olixina/docs.git",
-  "author": "",
+  "author": "olixina <695176656@qq.com>",
   "license": "MIT",
   "description": "VuePress docs",
   "bugs": {
     "url": "https://github.com/olixina/docs/issues"
   },
   "homepage": "https://github.com/olixina/docs#readme",
-  "dependencies": {
-    "yarn": "^1.22.11"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.8.2",
     "moment": "^2.29.1",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "yarn": "^1.22.11"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
