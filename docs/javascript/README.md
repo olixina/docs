@@ -1,5 +1,5 @@
 ---
-title: CSS
+title: JavaScript
 ---
 
 ## 你好
